@@ -1,0 +1,12 @@
+### Site metadata ###
+
+site_name: Python Maze Solver
+site_description: Tafe Project
+site_url: https://PierceLongamore/maze/
+repo_url: https://github.com/PierceLongamore/maze
+edit_uri: edit/master/docs/docs
+
+### Build settings ###
+theme: readthedocs
+nav:
+  - Home: index.md
