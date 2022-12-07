@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Tafe Project" /><link rel="canonical" href="https://PierceLongamore/maze/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Python Maze Solver</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/maze/";
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Python Maze Solver
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#features">Features</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Python Maze Solver</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/PierceLongamore/maze/edit/master/docs/docs/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="maze-solver">Maze Solver</h1>
+<blockquote>
+<p>Started template for a MkDocs docs site on GH Pages - including CI </p>
+</blockquote>
+<p><a href="https://github.com/PierceLongamore/maze"><img alt="Repo stars" src="https://img.shields.io/github/stars/PierceLongamore/maze?style=social" /></a></p>
+<h2 id="features">Features</h2>
+<blockquote>
+<p>How to use this project</p>
+</blockquote>
+<ul>
+<li><strong>Follow the tutorial instructions</strong><ul>
+<li>Install and configure a new or existing project.</li>
+<li>Run it locally.</li>
+<li>Deploy it.</li>
+</ul>
+</li>
+<li><strong>Add a copy of this project to your repos</strong><ul>
+<li><a href="https://github.com/MichaelCurrin/mkdocs-quickstart/generate"><img alt="Use this template" src="https://img.shields.io/badge/Use_this_template-2ea44f?logo=github" /></a></li>
+</ul>
+</li>
+<li><strong>View the live demo</strong><ul>
+<li>This site is hosted on GitHub Pages. See if you like it. Other themes are available - see the tutorial.</li>
+</ul>
+</li>
+</ul>
+<p>The aim here is not be complete or explain all concepts. It is to provide a reference for common steps and choices needed when setting up a docs site, but still at a beginner-friendly level.</p>
+<p>This guide is based on the <a href="https://www.mkdocs.org/">mkdocs.org</a> tutorial.</p>
+<h1 id="introduction">Introduction</h1>
+<p>This is a left hand wall following Python Maze. 
+First you must follow the left hand wall of the random maze to map every cell of the
+Maze
+Then you have to find the quickest way from the bottom right start, to the top left 
+end.
+I used a blue arrow to map all the cells.
+Then I used a red square to show the quickest way out.
+This was a hard project to work on. I worked out the left wall following first but 
+it was doubling back so it was not a good path. It was a bad path.
+I watched so many different tutorials maybe about 100 on how to do mazes, but there
+was hardly any that showed how to map the left hand wall, so I had to try so many
+different ways from lots of diffent tutorials and try different lists, 2D arrays, 
+stack popping on and popping off different ways to sort. I learned alot
+but it took so much time to learn how to do this. 
+I tried about 5 differnt versions before I finally got it to work properly and I
+used alot of the code from the first attempt that only mapped the left wall but
+doubled back. I used a long array which I learnt in one of the 
+tutorials and had a list of all the cells, the position and where it repeated the
+position to know the path that was quickest in the end. 
+I also had to put in an exception when it ran into a wall and could not go forward 
+left or right it had to turn around and orient the direction to were it was in the 
+maze.
+You have to import the library from the assessment document, otherwise the Pymaze 
+wont work.
+You have to from Pymaze, import maze and the Agent which I called Robot. The agent 
+tracks the path.
+You also have to  use navigate to move around.
+You have to append the list for the positions and trace yout path.</p>
+<h1 id="mapping-the-maze">Mapping the Maze</h1>
+<p>"FinalPythonBlueAllCells.jpg"</p>
+<h1 id="traversal">Traversal</h1>
+<p>"FinalPythonRedLeftWall.jpg"</p>
+<h1 id="both-mapping-and-traversal-together">Both mapping and Traversal together</h1>
+<p>"Final all plus left.jpg"</p>
+<h1 id="mapping-algorithm">Mapping Algorithm</h1>
+<p>Your information can go here</p>
+<pre><code>from pyamaze import agent, maze
+
+class Robot(agent):
+
+    def look(self, direction):
+        while (direction != self._orient):
+            self._RCW()
+
+    def turnLeft(self):
+        direction = (self._orient - 1)%4
+
+        self.look(direction)
+
+    def turnBack(self):
+        self.turnLeft()
+        self.turnLeft()
+
+    def turnRight(self):
+        self.turnBack()
+        self.turnLeft()
+
+    def forward(self):
+        if self.blocked:
+            raise Exception(&quot;Can't drive into a wall&quot;)
+        [
+            self.moveUp,
+            self.moveRight,
+            self.moveDown,
+            self.moveLeft
+        ][self._orient](None)
+
+    @property
+    def walls(self):
+        return self._parentMaze.maze_map[self.position]
+
+    @property
+    def blocked(self):
+        facing = [&quot;N&quot;, &quot;E&quot;, &quot;S&quot;, &quot;W&quot;][self._orient]
+        return self.walls[facing] == 0
+
+    def navigate(self):
+        self.turnLeft()
+        while self.blocked: self.turnRight()
+        self.forward()
+
+    def escape(self):
+        path = [self.position]
+        while self.position != (1, 1):
+            self.navigate()
+            path.append(self.position)
+        return path
+
+def main():
+
+    # Create maze and robot
+    m = maze(5, 5)
+    m.CreateMaze(loadMaze=&quot;maze--2022-11-25--14-43-24.csv&quot;)
+    r = Robot(m, shape=&quot;arrow&quot;)
+
+    # Find the path out of the maze
+    start = r.position
+    p = r.escape()
+    r.position = start
+
+    # Show the path out of the maze
+    r.footprints = True
+    m.tracePath({ r: p }, delay=20)
+    print(m.maze_map)
+    m.run()
+
+if __name__ == &quot;__main__&quot;: main()
+</code></pre>
+<h1 id="traversal-algorithm">Traversal Algorithm</h1>
+<h1 id="usage">Usage</h1>
+<p>When you run the Pymaze the program makes a random 20 X 20 Maze
+The first the blue arrow starts at the bottom right of the Maze this is the Start
+position
+The blue arrow follows the left wall and moves forward until there is no left wall
+then it has to move either turn aound, go up, go down and put the position of the
+cell into the long array. It doubles back on it self alot and you can see the path 
+because the arrow shows you the direction it has gone, you can track the path.
+Then the red square takes the quickest path and this happens very qickly because it
+dosent repeat any cells or tiles.
+At the end of the code I give you three options you can either have both the mapping
+and the traversing happening right after each other so the progam running all the 
+parts of the code. 
+You can comment out if you want to see just the mapping or just the quickest path.
+I put comments in the code so you would know which one works  depending on what you
+want to look at. 
+I would never use the Pymaze. 
+I would not like to go in a real maze either because you might gets stuck, but I 
+did learn that if you follow the left hand wall you will find the way out but it
+could take a very long time.</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/PierceLongamore/maze" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.3.1
+Build Date UTC : 2022-12-07 02:55:04.433777+00:00
+-->
